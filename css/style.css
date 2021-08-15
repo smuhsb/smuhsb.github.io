@@ -1,0 +1,59 @@
+  .logo0, .logo1, .logo2, .logo3, .logo4, .logo5, .logo6{
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .logo0 {
+    background-image: url(/logos/ibm.svg);
+  }
+
+  .logo1 {
+    background-image: url(/logos/peek-und-cloppenburg.svg);
+  }
+
+  .logo2 {
+    background-image: url(/logos/teva.svg);
+  }
+
+  .logo3 {
+    background-image: url(/logos/shell.svg);
+  }
+
+  .logo4 {
+    background-image: url(/logos/bio-rad.svg);
+  }  
+
+  .logo5 {
+    background-image: url(/logos/bp.svg);
+  }
+
+  .logo6 {
+    background-image: url(/logos/microsoft.svg);
+  }
+
+  .customTitle{
+    font-weight: bold;
+  }
+
+  .customText{
+    font-style: italic;
+  }
+
+  .customTextSize{
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: 0.75rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    line-height: normal;
+    color: #fafafa;
+  }
+
+  .customLink{
+    cursor: pointer;
+  }
+ 

@@ -1,0 +1,239 @@
+<mvc:View
+   controllerName="portfolio.controller.App"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns="sap.uxap"
+   xmlns:m="sap.m"
+   xmlns:layout="sap.ui.layout"
+   xmlns:html="http://www.w3.org/1999/xhtml">
+	<m:Shell backgroundImage="./images/background.jpg">
+
+		<ObjectPageLayout id="ObjectPageLayout"
+		   showTitleInHeaderContent="true"
+		   upperCaseAnchorBar="false"
+		   enableLazyLoading="true"
+		   useIconTabBar="true"
+		   showFooter="true">
+			
+			<headerTitle>
+				<ObjectPageDynamicHeaderTitle>
+
+					<expandedHeading>
+						<m:HBox>
+							<m:Title text="Coding my way since 2012...👨🏻‍💻" wrapping="true"/>
+						</m:HBox>
+					</expandedHeading>
+
+					<snappedHeading>
+						<m:FlexBox  fitContainer="true" alignItems="Center">
+							<m:Avatar src="./images/me.jpg" class="sapUiTinyMarginEnd"/>
+							<m:Title text="Syed Muhammed" wrapping="true"/>
+						</m:FlexBox>
+					</snappedHeading>
+
+					<expandedContent>
+						<m:Text text="I build Business Applications in SAP"/>
+					</expandedContent>
+
+					<actions>
+						<m:Button text="My Resume" icon="sap-icon://pdf-attachment" press="onResume"/>
+					</actions>
+
+				</ObjectPageDynamicHeaderTitle>
+			</headerTitle>
+
+			<headerContent>
+				<m:FlexBox wrap="Wrap">
+					<layout:HorizontalLayout>
+						<m:Avatar class="sapUiSmallMarginEnd" src="./images/me.jpg" displaySize="L" />
+
+						<layout:VerticalLayout class="sapUiSmallMarginBeginEnd" width="80%">
+							<m:Text text="Hello World!!! &#xA;I am Syed Muhammed, a certified SAP ABAP Developer, &amp; an SAP UI5 Developer." 
+								wrapping="true" 
+								class="sapUiTinyMargin customTitle" />
+							<m:Text text="Since beginning my journey almost 9 years ago, I've been designing, developing, and supporting SAP ABAP 
+								Applications for multiple clients serving leading industries, in various countries in Europe, North America,
+								South America, and Asia. In total, I have worked for 11 Projects while employed for IBM and currently Accenture, 
+								doing developments across different functional areas."
+								wrapping="true"
+								class="sapUiTinyMargin"/>
+						</layout:VerticalLayout>
+					</layout:HorizontalLayout>
+				</m:FlexBox>
+			</headerContent>
+
+			<sections>
+				
+				<ObjectPageSection titleUppercase="false" title="Home">
+					<subSections>
+						<ObjectPageSubSection>
+							<blocks>
+								<m:VBox alignItems="Center">
+									<m:Text text="Welcome to my page!&#xA;&#xA;
+										If you would like to stay connected, feel free to -"
+										wrapping="true"
+										textAlign="Center"
+										class="sapUiLargeMarginTop customText"/>
+									<m:HBox>
+										<m:Button text='Drop me an email'  class="sapUiSmallMargin"   press="onEmail"/>
+										<m:Button text='Connect on LinkedIn' class="sapUiSmallMargin" press="onLinkedIn"/>
+									</m:HBox>
+								</m:VBox>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+				<ObjectPageSection titleUppercase="false" title="Clients Served">
+					<subSections>
+						<ObjectPageSubSection>
+							<blocks>
+								<layout:VerticalLayout
+									width="100%">
+									<layout:Grid
+										containerQuery="true"
+										position="Center"
+										width="75%"
+										vSpacing="2">
+										<html:div class="logo0"/>
+										<html:div class="logo1"/>
+										<html:div class="logo2"/>
+										<html:div class="logo3"/>
+										<html:div class="logo4"/>
+										<html:div class="logo5"/>
+										<html:div class="logo6"/>
+									</layout:Grid>
+								</layout:VerticalLayout>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+				<ObjectPageSection titleUppercase="false" title="Certfications Unlocked">
+					<subSections>
+						<ObjectPageSubSection>
+							<blocks>
+								<layout:Grid defaultSpan="XL3 L3 M6 S12" defaultIndent="XL0 L0 M3 S4">
+									<layout:content>
+										
+										<m:VBox alignItems="Center">
+											<m:Avatar id="ABAPonHANABadgeId"
+												src="./badges/SAPCertifiedDevelopmentSpecialistABAPforSAPHANA2.0.png"
+												displaySize="Custom"
+												customDisplaySize="200px"
+												displayShape="Square"
+												press="onBadgePress"/>
+											<m:Text text="SAP Certified Development Specialist - ABAP for SAP HANA 2.0"
+												textAlign="Center"
+												class="sapUiTinyMargin"/>
+										</m:VBox>
+										
+										<m:VBox alignItems="Center">
+											<m:Avatar id="AzureFundBadgeId"
+												src="./badges/azure-fundamentals.png"
+												displaySize="Custom"
+												customDisplaySize="200px"
+												displayShape="Square"
+												press="onBadgePress"/>
+											<m:Text text="Microsoft Certified: Azure Fundamentals"
+												textAlign="Center"
+												class="sapUiTinyMargin"/>
+										</m:VBox>
+
+										<m:VBox alignItems="Center">
+											<m:Avatar id="ABAPBadgeId"
+												src="./badges/SAPCertifiedDevelopmentAssociateABAPwithSAPNetWeaver7.50.png"
+												displaySize="Custom"
+												customDisplaySize="200px"
+												displayShape="Square"
+												press="onBadgePress"/>
+											<m:Text text="SAP Certified Development Associate - ABAP with SAP NetWeaver 7.50"
+												textAlign="Center"
+												class="sapUiTinyMargin"/>
+										</m:VBox>
+
+										<m:VBox alignItems="Center">
+											<m:Avatar id="ActivatePMBadgeId"
+												src="./badges/SAPCertifiedAssociateSAPActivateProjectManager.png"
+												displaySize="Custom"
+												customDisplaySize="200px"
+												displayShape="Square"
+												press="onBadgePress"/>
+											<m:Text text="SAP Certified Associate - SAP Activate Project Manager"
+												textAlign="Center"
+												class="sapUiTinyMargin"/>
+										</m:VBox>
+
+									</layout:content>
+								</layout:Grid>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+				<ObjectPageSection titleUppercase="false" title="Trainings Completed">
+					<subSections>
+						<ObjectPageSubSection>
+							<blocks>
+								<layout:Grid defaultSpan="XL4 L4 M6 S12" defaultIndent="XL0 L0 M3 S4">
+									<layout:content>
+										
+										<m:VBox alignItems="Center">
+											<m:Avatar id="FioriElementsBadgeId"
+												src="./badges/fiori-ea1_open_badge.png"
+												displaySize="Custom"
+												customDisplaySize="200px"
+												displayShape="Square"
+												press="onBadgePress"/>
+											<m:Text text="Developing and Extending SAP Fiori Elements Apps"
+												textAlign="Center"
+												class="sapUiTinyMargin"/>
+										</m:VBox>
+										
+										<m:VBox alignItems="Center">
+											<m:Avatar id="FioriOverviewBadgeId"
+												src="./badges/fiori3_open_badge.png"
+												displaySize="Custom"
+												customDisplaySize="200px"
+												displayShape="Square"
+												press="onBadgePress"/>
+											<m:Text text="SAP Fiori Overview: Design, Develop and Deploy"
+												textAlign="Center"
+												class="sapUiTinyMargin"/>
+										</m:VBox>
+
+										<m:VBox alignItems="Center">
+											<m:Avatar id="SAPDevOpsId"
+												src="./badges/devops_open_badge.png"
+												displaySize="Custom"
+												customDisplaySize="200px"
+												displayShape="Square"
+												press="onBadgePress"/>
+											<m:Text text="Efficient DevOps with SAP"
+												textAlign="Center"
+												class="sapUiTinyMargin"/>
+										</m:VBox>
+
+									</layout:content>
+								</layout:Grid>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+			</sections>
+
+			<footer>
+				<m:FlexBox 
+					justifyContent="Center">
+					<html:div class="customTextSize" style="text-align: center;">
+						Made by Syed Muhammed using <html:a href="https://openui5.org/" title="OpenUI5" class="customTextSize customLink">OpenUI5</html:a> hosted by <html:a href="https://github.com/" title="GitHub" class="customTextSize customLink">GitHub</html:a>
+						Few Icons made by <html:a href="https://www.freepik.com" title="Freepik" class="customTextSize customLink">Freepik</html:a> from <html:a href="https://www.flaticon.com/" title="Flaticon" class="customTextSize customLink">www.flaticon.com</html:a>
+						Backgroud Image by <html:a href="https://www.pexels.com/@francesco-ungaro" title="Francesco Ungaro" class="customTextSize customLink">Francesco Ungaro</html:a> from <html:a href="https://www.pexels.com/photo/grayscale-photography-of-wood-246315" title="Pexels" class="customTextSize customLink">Pexels</html:a>
+					</html:div>
+				</m:FlexBox>
+			</footer>
+		
+		</ObjectPageLayout>
+
+	</m:Shell>
+</mvc:View>
