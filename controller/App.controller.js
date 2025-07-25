@@ -38,7 +38,7 @@ sap.ui.define([
       },
 
       onResume:function(){
-         window.open("https://shorturl.at/fmDS3");
+         window.open("http://bit.ly/40yZOwR");
       },
 
       onEmail:function(){
